@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            theme:{
-                extend:{
+            theme: {
+                extend: {
                 }
             }
         }
     </script>
 </head>
+
 <body>
     <div class="w-full h-screen bg bg-slate-100 flex items-center justify-center">
-          <div class="w-[29rem] h-[35rem] bg-white shadow-slate-200"> 
+        <div class="w-[39rem] h-[35rem] bg-white shadow-slate-200">
             <h6 class="text-center my-5 font-bold">Sign Up</h6>
-          </div>
+            <form action="">
+                <div class="grid ">
+                    <label for="" class="text-slate-900 mx-1">First Name</label>
+                    <input type="text" name="firstname"placeholder="first name" class="border-b focus:outline-none">
+
+                </div>
+            </form>
+        </div>
     </div>
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
