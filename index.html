@@ -27,11 +27,13 @@
                 <form action="" class="mt-10 flex flex-col ">
                     <!-- username -->
                     <div class="relative">
-                        <input type="text" name="name" id="username"
-                            class="rounded-[40px]  mb-5 p-1.5 focus:outline-none text-center w-[280px] bg-white opacity-40 border-solid border-4 border-white border-t-white border-r-white border-b-white ">
+                        <input type="text" name="name" id="username" placeholder="Enter your name" required
+                            class="rounded-[40px]  mb-5 p-1.5 focus:outline-none text-center w-[280px] bg-white opacity-60 border-solid border-4 border-white border-t-white border-r-white border-b-white">
+                            <span id="name-error" class="absolute right-0 top-1.5"></span> 
+                            <!-- span of name error -->
                         <!-- user span -->
                         <span
-                            class="absolute  top-0 left-0  w-[45px] h-[45px] bg-white flex justify-center items-center rounded-[50%] opacity-90">
+                           id = "userspan" class="absolute  top-0 left-0  w-[45px] h-[45px] bg-white flex justify-center items-center rounded-[50%] opacity-90">
                             <!-- usericon -->
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6">
@@ -45,6 +47,8 @@
                     <div class="relative">
                         <input type="email" name="email" id="useremail"
                             class="rounded-[40px]  mb-5 p-1.5 focus:outline-none text-center w-[280px] bg-white opacity-40 border-solid border-4 border-white border-t-white border-r-white border-b-white ">
+                               <span id="email-error"></span> 
+                            <!-- span of name error -->
                         <!-- user span -->
                         <span
                             class="absolute  top-0 left-0  w-[45px] h-[45px] bg-white flex justify-center items-center rounded-[50%] opacity-90">
@@ -61,6 +65,8 @@
                     <div class="relative">
                         <input type="password" name="password" id="userpassword"
                             class="rounded-[40px]  mb-5 p-1.5 focus:outline-none text-center w-[280px] bg-white opacity-40 border-solid border-4 border-white border-t-white border-r-white border-b-white ">
+                               <span id="password-error"></span> 
+                            <!-- span of name error -->
                         <!-- user span -->
                         <span
                             class="absolute  top-0 left-0  w-[45px] h-[45px] bg-white flex justify-center items-center rounded-[50%] opacity-90">
@@ -77,6 +83,8 @@
 
                     <div>
                         <button class="rounded-full bg-white pt-2 pb-2 pl-4 pr-4 w-[280px] font-bold text-cyan-500 font-mono ">SIGN UP</button>
+                           <span id="submit-error"></span> 
+                            <!-- span of name error -->
                     </div>
                     <p class="text-[12px] text-center text-gray-200 font-mono mt-2">Already have an account? <strong>login</strong></p>
                     <p class="text-[12px] text-center text-gray-200 font-mono mt-10 mb-1">Contact For Support</p>
