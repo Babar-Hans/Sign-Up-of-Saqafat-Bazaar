@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form-Validation</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
 </head>
 
 <body>
-
+    
 
     <section class="bg-gray-50 min-h-screen flex items-center justify-center">
         <!-- login form container-->
@@ -29,7 +30,7 @@
                     <div class="relative">
                         <input type="text" name="name" id="username" placeholder="Enter your name" required
                             class="rounded-[40px]  mb-5 p-1.5 focus:outline-none text-center w-[280px] bg-white opacity-60 border-solid border-4 border-white border-t-white border-r-white border-b-white">
-                            <span id="name-error" class="absolute right-0 top-1.5"></span> 
+                            <span id="name-error" class="absolute  top-1.5 right-2"></span> 
                             <!-- span of name error -->
                         <!-- user span -->
                         <span
@@ -45,9 +46,9 @@
 
                     <!-- user mail  -->
                     <div class="relative">
-                        <input type="email" name="email" id="useremail"
-                            class="rounded-[40px]  mb-5 p-1.5 focus:outline-none text-center w-[280px] bg-white opacity-40 border-solid border-4 border-white border-t-white border-r-white border-b-white ">
-                               <span id="email-error"></span> 
+                        <input type="email" name="email" id="useremail" placeholder="Enter your email" required
+                            class="rounded-[40px]  mb-5 p-1.5 focus:outline-none text-center w-[280px] bg-white opacity-60 border-solid border-4 border-white border-t-white border-r-white border-b-white ">
+                               <span id="email-error" class="absolute  top-1.5 right-2"></span> 
                             <!-- span of name error -->
                         <!-- user span -->
                         <span
@@ -63,9 +64,9 @@
 
                     <!-- user password  -->
                     <div class="relative">
-                        <input type="password" name="password" id="userpassword"
-                            class="rounded-[40px]  mb-5 p-1.5 focus:outline-none text-center w-[280px] bg-white opacity-40 border-solid border-4 border-white border-t-white border-r-white border-b-white ">
-                               <span id="password-error"></span> 
+                        <input type="password" name="password" id="userpassword" placeholder="Enter your password" required
+                            class="rounded-[40px]  mb-5 p-1.5 focus:outline-none text-center w-[280px] bg-white opacity-60 border-solid border-4 border-white border-t-white border-r-white border-b-white ">
+                               <span id="password-error" class="absolute  top-0 left-0"></span> 
                             <!-- span of name error -->
                         <!-- user span -->
                         <span
