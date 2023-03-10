@@ -57,3 +57,33 @@ function emailValidate(){
 
 let uEmail = document.getElementById("useremail");
 uEmail.addEventListener("keyup",emailValidate);
+
+
+
+// user password function
+
+function passwordValidate(){
+    //empty
+    let uPassword = document.getElementById("userpassword").value;
+    if(uPassword.length == 0){
+        passwordError.innerHTML = "<i class='fa-solid fa-empty-set'></i>";
+        passwordError.style.color = "#FEFA16";
+        passwordError.style.fontSize = "20px"
+        return false;
+    }
+    //invalid
+    if(!uPassword.match(/^[A-Za-z]\w{7,14}$/)){
+        passwordError.innerHTML = '<i class="fa-regular fa-circle-xmark"></i>';
+        passwordError.style.color = "#FA2909"
+        passwordError.style.fontSize = "20px"
+        return false;
+    }
+    //valid
+    passwordError.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
+    passwordError.style.color = "#34CC41";
+    passwordError.style.fontSize = "20px"
+    return true;
+}
+
+let uPassword = document.getElementById("userpassword");
+uPassword.addEventListener("keyup", passwordValidate);
